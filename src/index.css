@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html,
+#root,
+.app {
+  height: 100%;
+  background: linear-gradient(90deg, #020617, #0f172a);
+
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/* DIALOG STUFF========================================= */
+.dialog-box {
+  background: #1f2937;
+  backdrop-filter: blur(8px);
+  border: 1px solid transparent;
+  border-top-color: rgba(255, 255, 255, 0.2);
+  border-left-color: rgba(255, 255, 255, 0.2);
+  border-right-color: rgba(0, 0, 0, 0.1);
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+/* SHADOW STUFF=========================================== */
+
+.tile-shadow {
+  background: #a8a29e3b;
+  backdrop-filter: blur(8px);
+  border: 1px solid transparent;
+  border-top-color: rgba(255, 255, 255, 0.2);
+  border-left-color: rgba(255, 255, 255, 0.2);
+  border-right-color: rgba(0, 0, 0, 0.1);
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+.button-shadow {
+  background: #78716c5a;
+  backdrop-filter: blur(8px);
+  border: 1px solid transparent;
+  border-top-color: rgba(255, 255, 255, 0.2);
+  border-left-color: rgba(255, 255, 255, 0.2);
+  border-right-color: rgba(0, 0, 0, 0.1);
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.button-shadow:hover {
+  background: #fafafa48;
+}
+
+.button-shadow:active {
+  transform: translateY(1px);
+}
+
+/* BUBBLE ANIMATION================================== */
+@keyframes fadeOut {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.floating-circle {
+  animation: floatAndFade 2s ease-out forwards;
+}
+
+/* NAVBAR STYLING================================================================ */
+.navlink-desktop {
+  border-top: 1px solid #404040;
+  border-left: 1px solid #404040;
+  border-right: 1px solid #404040;
+}
+
+/* THE VERY COOL BUTTON STYLING================================================================ */
+.button-shadow {
+  box-shadow: 0 1px 1px rgb(156 163 175 / 0.1),
+    /* gray-400 */ 0 2px 2px rgb(156 163 175 / 0.08),
+    0 4px 4px rgb(156 163 175 / 0.06);
+}
+/* THE ONE STYLING WITHOUT HOVER ANIMATION=========================================================== */
+.the-one-static {
+  position: relative;
+  display: inline-block; /* Adjust as needed */
+  transition: background-image 0.1s ease;
+}
+
+.the-one-static::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  background-image: linear-gradient(to right, #3b82f6, #2dd4bf);
+  filter: blur(8px);
+  border-radius: 4px; /* Adjust as needed */
+  transition: opacity 0.3s ease;
+}
+
+.the-one-static:hover::after {
+  opacity: 1; /* Keeps the pseudo-element shadow visible */
+}
+
+/* DIALOG STYLING================================================================ */
+@keyframes rotateGradient {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animated-gradient {
+  position: absolute; /* Position relative to the parent container */
+  top: 50%; /* Move the element 50% down from the top of its container */
+  left: 50%; /* Move the element 50% from the left of its container */
+  transform: translate(-50%, -50%); /* Center the element */
+  width: 400px; /* Adjust size as needed */
+  height: 400px; /* Adjust size as needed */
+  background-color: transparent;
+}
+
+.animated-gradient::before {
+  content: "";
+  position: absolute;
+  top: -50%; /* Expand background size to cover */
+  left: -50%; /* Expand background size to cover */
+  right: -50%; /* Expand background size to cover */
+  bottom: -50%; /* Expand background size to cover */
+  background-image: conic-gradient(from 20deg, #1f2937, #7e22ce, #be185d);
+
+  z-index: 0;
+  animation: rotateGradient 8s linear infinite;
+}
+
+/* DIALOG BUTTON STYLING================================================================ */
+
+.the-one-dialog {
+  position: relative;
+  display: inline-block;
+  transition: background-image 0.1s ease;
+}
+
+.the-one-dialog::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  background-image: linear-gradient(
+    to right,
+    #7e22ce,
+    #be185d
+  ); /* Updated gradient colors */
+  filter: blur(8px);
+  border-radius: 4px; /* Adjust as needed */
+  transition: opacity 0.3s ease;
+}
+
+.the-one-dialog:hover::after {
+  opacity: 0; /* Hides the pseudo-element shadow */
+}
+
+/* CONTACT PAGE INPUT STYLING================================================================ */
+/* Chrome, Safari, and Opera */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #262626 inset !important;
+  -webkit-text-fill-color: #f3f4f6 !important;
+}
+
+/* Firefox */
+input:-moz-ui-invalid {
+  box-shadow: 0 0 0 30px #262626 inset !important;
+}
+
+input:-webkit-autofill {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Input focus state */
+input:focus {
+  background-color: #262626;
+}
