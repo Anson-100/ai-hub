@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ade56c56.css",
+    "main.js": "/static/js/main.414cc968.js",
+    "static/media/aiva-icon.png": "/static/media/aiva-icon.f224f2a33f2b9d32b5ea.png",
+    "static/media/apple-podcast-icon.png": "/static/media/apple-podcast-icon.276062b2c7e9352b1e4e.png",
+    "static/media/spotify-icon.png": "/static/media/spotify-icon.099d88a473c1ccabeed5.png",
+    "static/media/cool english logo.png": "/static/media/cool english logo.0d15a76ceb2ba8c1204c.png",
+    "static/media/ideogram-icon.jpeg": "/static/media/ideogram-icon.1e9569011d602ef661d3.jpeg",
+    "static/media/chatGPT-icon.svg": "/static/media/chatGPT-icon.db9bafd536646dc736996360db794514.svg",
+    "static/media/IconInsta.svg": "/static/media/IconInsta.9f269088b27ff186abc202f956b3bf1c.svg",
+    "static/media/claude-icon.svg": "/static/media/claude-icon.6c8ac8a957cf5988bc0dd6c3d3f5d397.svg",
+    "static/media/IconTikTok.svg": "/static/media/IconTikTok.5f9e455273a3efd8cbf2c5b68a590140.svg",
+    "static/media/pika-icon.svg": "/static/media/pika-icon.48b5f0b31643f25a0d96fbf257b63b60.svg",
+    "static/media/runway-icon.svg": "/static/media/runway-icon.34af9f18e7bfab8725a1f2079c1c5548.svg",
+    "static/media/midjourney-icon.svg": "/static/media/midjourney-icon.ab1227c3d1e0217aa87890b2ce342742.svg",
+    "index.html": "/index.html",
+    "static/media/murf-icon.svg": "/static/media/murf-icon.07e96732de02f67371f46bceebab9cf5.svg",
+    "static/media/IconYT.svg": "/static/media/IconYT.54b3760f356aa8cc45a471791f055a72.svg",
+    "static/media/IconFB.svg": "/static/media/IconFB.88202a875aab91299de919ef1f64f0e4.svg",
+    "static/media/playht-icon.svg": "/static/media/playht-icon.46a28ec980553d931de5ede4c65e9295.svg",
+    "static/media/dalle-icon.svg": "/static/media/dalle-icon.15a56a4d245af789202e996456661eb1.svg",
+    "static/media/suno-icon.svg": "/static/media/suno-icon.efd10933a74061429e5f940154648a51.svg",
+    "static/media/gemini-icon.svg": "/static/media/gemini-icon.ec0fcb4abf6871b15c64d0c87086ec69.svg",
+    "static/media/elevenlabs-icon.svg": "/static/media/elevenlabs-icon.632b28d385b691a1597b2dc016b9d161.svg",
+    "main.ade56c56.css.map": "/static/css/main.ade56c56.css.map",
+    "main.414cc968.js.map": "/static/js/main.414cc968.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ade56c56.css",
+    "static/js/main.414cc968.js"
+  ]
+}
