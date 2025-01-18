@@ -71,7 +71,7 @@ const Landing = ({ setSelectedPage }) => {
           <h2 className="text-4xl sm:text-[2.8rem] xl:text-[3rem] my-2 font-bold sm:w-2/3 mx-auto leading-tight">
             What are you trying to accomplish? AI can help!
           </h2>
-          <p className="w-full sm:w-2/3 mx-auto sm:text-lg text-bg-supporting">
+          <p className="w-full sm:w-2/3 mx-auto sm:text-lg text-gray-300">
             AI can make your life easier but knowing what to use and how to use
             it can be overwhelming. Choose a category below to get started.
           </p>

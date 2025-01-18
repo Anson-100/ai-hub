@@ -56,7 +56,7 @@ const PageOne = ({ setSelectedPage }) => {
               <h1 className="text-xl ss:3xl md:text-3xl font-bold">
                 Chat AI (aka chatbots)
               </h1>
-              <h2 className="text-base sm:text-lg se:text-sm font-semibold">
+              <h2 className="text-base text-gray-400 sm:text-lg se:text-sm font-semibold">
                 Best for most people in most situations
               </h2>
             </div>

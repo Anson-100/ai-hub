@@ -22,82 +22,28 @@ const Inspiration = () => {
     {
       id: "policy1",
       question: "Chat AI Stuff",
-      answer:
-        "Welcome to the Servomancer Browser Extension! Your privacy matters to us. This Privacy Policy explains how we handle your data when you use our extension. Please take a moment to review it to understand how we treat your information.",
+      answer: "",
     },
     {
       id: "policy2",
       question: "Image AI Stuff",
-      answer: () => (
-        <span>
-          Enjoy an enhanced tennis viewing experience with our Extension! It's
-          exclusively tailored for{" "}
-          <a
-            className="hover:underline text-blue-400"
-            href="http://www.tennistv.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            www.tennistv.com
-          </a>{" "}
-          and{" "}
-          <a
-            className="hover:underline text-blue-400"
-            href="http://www.tennischannel.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            www.tennischannel.com
-          </a>
-          , activating only when you visit these sites. Rest assured, we don't
-          gather any personal info or user data through the Extension. Your
-          browsing habits, preferences, and activities outside of these sites
-          remain completely private and untouched.
-        </span>
-      ),
+      answer: () => "",
     },
     {
       id: "policy3",
       question: "Speech/Text AI Stuff ",
-      answer:
-        "Our Extension may save a single authentication token in your browser's local storage. This token ensures smooth access to specific features or services. It's securely stored on your device and isn't shared with any external servers or third parties.",
+      answer: "",
     },
     {
       id: "policy4",
       question: "Music AI Stuff",
-      answer: () => (
-        <span>
-          Our Extension doesn't link to third-party websites. This Privacy
-          Policy covers your use of the Extension on{" "}
-          <a
-            className="hover:underline text-blue-400"
-            href="http://www.tennistv.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            www.tennistv.com
-          </a>{" "}
-          or{" "}
-          <a
-            className="hover:underline text-blue-400"
-            href="http://www.tennischannel.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            www.tennischannel.com
-          </a>
-          . While using our Extension, we're not responsible for the content or
-          practices of any third-party sites you may visit through external
-          links.
-        </span>
-      ),
+      answer: () => "",
     },
 
     {
       id: "policy5",
       question: "Video AI Stuff",
-      answer:
-        "We might make changes to this Privacy Policy occasionally. Don't worry, any updates will be posted here, with the effective date adjusted accordingly. Feel free to check back here every now and then for any changes.",
+      answer: "",
     },
   ]
 

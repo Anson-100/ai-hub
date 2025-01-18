@@ -17,7 +17,7 @@ const dropdownItems = [
   },
 ]
 
-const Instructions = ({ setSelectedPage }) => {
+const PageTwo = ({ setSelectedPage }) => {
   return (
     <>
       <div className="relative bottom-0 right-0 w-full h-0">
@@ -31,7 +31,7 @@ const Instructions = ({ setSelectedPage }) => {
         <div className="absolute w-28 h-28 rounded-full bg-gray-200 opacity-5 top-1/2 right-40" />
       </div>
 
-      <section id="instructions" className="min-h-[100svh] relative">
+      <section id="pagetwo" className="min-h-[100svh] relative">
         <div className="w-full flex flex-col items-center py-10 sm:py-16">
           {/* HEADER */}
           <motion.div
@@ -49,7 +49,7 @@ const Instructions = ({ setSelectedPage }) => {
               <h1 className="text-xl ss:3xl md:text-3xl font-bold">
                 Image AI (aka image generators)
               </h1>
-              <h2 className="text-base sm:text-lg se:text-sm font-semibold">
+              <h2 className="text-base sm:text-lg text-gray-400 se:text-sm font-semibold">
                 The only limit is your imagination!
               </h2>
             </div>
@@ -65,21 +65,23 @@ const Instructions = ({ setSelectedPage }) => {
               imgSrc={midjourneyIcon}
               altText="Midjourney Icon"
               title="Midjourney"
-              description=""
+              contentKey="midjourney" // Added contentKey
             />
+
             <PageTile
               href="https://labs.openai.com"
               imgSrc={dalleIcon}
               altText="DALL-E Icon"
               title="DALL-E"
-              description=""
+              contentKey="dalle" // Added contentKey
             />
+
             <PageTile
               href="https://ideogram.ai"
               imgSrc={ideogramIcon}
               altText="Ideogram AI Icon"
               title="Ideogram"
-              description=""
+              contentKey="ideogram" // Added contentKey
             />
           </div>
         </div>
@@ -88,4 +90,4 @@ const Instructions = ({ setSelectedPage }) => {
   )
 }
 
-export default Instructions
+export default PageTwo

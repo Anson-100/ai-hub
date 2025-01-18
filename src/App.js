@@ -8,8 +8,8 @@ import Navbar from "./scenes/Navbar"
 import DotGroup from "./scenes/DotGroup" // Import DotGroup here
 import Landing from "./scenes/Landing"
 import PageOne from "./scenes/PageOne"
-import Instructions from "./scenes/Instructions"
-import Activities from "./scenes/Activities"
+import PageTwo from "./scenes/PageTwo"
+import PageThree from "./scenes/PageThree"
 import Testimonials from "./scenes/Testimonials"
 
 import FAQ from "./scenes/FAQ"
@@ -77,7 +77,7 @@ function App() {
                     <motion.div
                       margin="0 0 -200px 0"
                       amount="all"
-                      onViewportEnter={() => setSelectedPage("pageone")}
+                      onViewportEnter={() => setSelectedPage("PageOne")}
                     >
                       <PageOne />
                     </motion.div>
@@ -88,9 +88,9 @@ function App() {
                     <motion.div
                       margin="0 0 -200px 0"
                       amount="all"
-                      onViewportEnter={() => setSelectedPage("instructions")}
+                      onViewportEnter={() => setSelectedPage("PageTwo")}
                     >
-                      <Instructions />
+                      <PageTwo />
                     </motion.div>
                   </div>
                   <LineGradient />
@@ -98,9 +98,9 @@ function App() {
                     <motion.div
                       margin="0 0 -200px 0"
                       amount="all"
-                      onViewportEnter={() => setSelectedPage("Activities")}
+                      onViewportEnter={() => setSelectedPage("PageThree")}
                     >
-                      <Activities />
+                      <PageThree />
                     </motion.div>
                   </div>
                   <LineGradient />

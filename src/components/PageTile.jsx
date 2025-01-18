@@ -9,7 +9,11 @@ const PageTile = ({ href, imgSrc, altText, title, contentKey }) => {
     <div className="group flex flex-col rounded-md se:p-2 items-center font-quest w-full sm:w-1/3 text-text-content">
       {/* IMAGE AND TITLE */}
       <div className="tile-shadow w-full flex flex-col items-center rounded-t-md gap-2 py-6 px-12">
-        <img src={imgSrc} className="h-6 sm:h-20 md:h-20" alt={altText} />
+        <img
+          src={imgSrc}
+          className="h-6 sm:h-20 md:h-20 grayscale"
+          alt={altText}
+        />
         <h3 className="text-text-content text-lg">{title}</h3>
       </div>
 

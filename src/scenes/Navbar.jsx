@@ -53,6 +53,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
     }
   }, [isMenuToggled])
 
+  const [isHovered, setIsHovered] = useState(false)
   return (
     <nav
       className={`${navbarBackground} z-30 w-full fixed top-0 bg-opacity-65 backdrop-blur-xl border-t-4 border-neutral-700 border-opacity-85`}
@@ -66,45 +67,73 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
         {/* DESKTOP NAV ===================================================================*/}
         {isDesktop ? (
           window.location.pathname === "/" ? (
-            <div className="flex justify-between items-center gap-[.75rem] text-md font-quest bg-zinc-500 bg-opacity-15 backdrop-blur-xl p-2 rounded-md">
-              {/* <LinkDesktop
+            <div className="flex justify-between items-center  text-md font-quest bg-zinc-500 bg-opacity-15 backdrop-blur-xl rounded-md">
+              <LinkDesktop
                 displayText="Home"
                 page="Home"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />{" "}
-              <div className="w-[1px] h-8 bg-zinc-400"></div> */}
-              <LinkDesktop
-                displayText="Chat AI"
-                page="PageOne"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
-              <LinkDesktop
-                displayText="Image AI"
-                page="Instructions"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
-              <LinkDesktop
-                displayText="Text ↔ Speech AI"
-                page="Activities"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
-              <LinkDesktop
-                displayText="Music AI"
-                page="Testimonials"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
-              <LinkDesktop
-                displayText="Video AI"
-                page="PageFive"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
-              <div className="w-[1px] h-6 bg-zinc-400"></div>
+              <div
+                className="relative"
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+              >
+                <button className="text-gray-100 text-lg h-full hover:text-sky-400 hover:bg-zinc-900 hover:bg-opacity-40 py-5 px-5 ">
+                  AI Categories ⏷
+                </button>
+                {isHovered && (
+                  <div
+                    onClick={() => setIsHovered(false)}
+                    className="absolute flex flex-col  -left-2 -mt-2 bg-zinc-700 rounded-md shadow-lg min-w-[250px] transition-opacity duration-200 opacity-100 w-auto"
+                  >
+                    <LinkDesktop
+                      displayText="Chat AI"
+                      page="PageOne"
+                      selectedPage={selectedPage}
+                      setSelectedPage={setSelectedPage}
+                      Icon={ChatBubbleLeftRightIcon}
+                    />
+                    <div className="h-[1px] w-full bg-neutral-500 landscape-mobile:hidden"></div>
+
+                    <LinkDesktop
+                      displayText="Image AI"
+                      page="PageTwo"
+                      selectedPage={selectedPage}
+                      setSelectedPage={setSelectedPage}
+                      Icon={PhotoIcon}
+                    />
+                    <div className="h-[1px] w-full bg-neutral-500 landscape-mobile:hidden"></div>
+
+                    <LinkDesktop
+                      displayText="Text ↔ Speech AI"
+                      page="PageThree"
+                      selectedPage={selectedPage}
+                      setSelectedPage={setSelectedPage}
+                      Icon={SpeakerWaveIcon}
+                    />
+                    <div className="h-[1px] w-full bg-neutral-500 landscape-mobile:hidden"></div>
+
+                    <LinkDesktop
+                      displayText="Music AI"
+                      page="Testimonials"
+                      selectedPage={selectedPage}
+                      setSelectedPage={setSelectedPage}
+                      Icon={MusicalNoteIcon}
+                    />
+                    <div className="h-[1px] w-full bg-neutral-500 landscape-mobile:hidden"></div>
+
+                    <LinkDesktop
+                      displayText="Video AI"
+                      page="PageFive"
+                      selectedPage={selectedPage}
+                      setSelectedPage={setSelectedPage}
+                      Icon={VideoCameraIcon}
+                    />
+                  </div>
+                )}
+              </div>
+              {/* <div className="w-[1px] h-6 bg-zinc-400"></div> */}
               <Link
                 to="/inspiration" // Path to your Privacy Policy component
                 onClick={() => {
@@ -115,7 +144,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                   selectedPage === selectedPage
                     ? "text-gray-200"
                     : "text-gray-100"
-                } py-3 px-4 flex hover:text-sky-400 text-lg text-text-supporting z-40 `} // Add flex and gap for icon alignment
+                } py-5 px-5 flex hover:text-sky-400 text-lg text-text-supporting z-40 hover:bg-zinc-900 hover:bg-opacity-40`} // Add flex and gap for icon alignment
               >
                 Inspiration
               </Link>
@@ -129,21 +158,10 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                   selectedPage === selectedPage
                     ? "text-gray-200"
                     : "text-gray-100"
-                } py-3 px-4 flex hover:text-orange-400 text-lg text-text-supporting z-40 border-[1px] border-zinc-500 rounded-sm border-dashed border-opacity-40 hover:border-orange-400`} // Add flex and gap for icon alignment
+                } py-5 px-5 flex hover:text-gray-100 text-lg hover:bg-red-900 text-text-supporting z-40 rounded-sm hover:bg-opacity-60`} // Add flex and gap for icon alignment
               >
                 Warning!
               </Link>
-
-              {/* <div className="w-[1px] h-8 bg-zinc-400"></div>
-              <div className="hover:cursor-pointer text-text-supporting hover:text-text-primary py-3 px-4 flex items-center gap-2  hover:bg-box-bg rounded-md border-[1px] border-zinc-400">
-                <a
-                  href={process.env.REACT_APP_STRIPE_CUSTOMER_PORTAL_LINK}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Sign In
-                </a>
-              </div> */}
             </div>
           ) : (
             <PageLinkDesktop setSelectedPage={setSelectedPage} />
@@ -201,7 +219,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
               <div className="h-[1px] w-full bg-neutral-500 landscape-mobile:hidden"></div>
               <LinkMobile
-                page="instructions"
+                page="pagetwo"
                 displayText="Image AI"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
@@ -211,7 +229,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
               <div className="h-[1px] w-full bg-neutral-500 landscape-mobile:hidden"></div>
               <LinkMobile
-                page="activities"
+                page="pagethree"
                 displayText="Text ↔ Speech AI"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
