@@ -12,7 +12,7 @@ const dropdownItems = [
     id: "music1",
     question: "What is Music AI?",
     answer:
-      "Music AI tools help create, edit, or enhance music using artificial intelligence.",
+      "Music AI helps you create, edit, and enhance music with the power of artificial intelligence. Whether you’re generating a brand-new song, fine-tuning a beat, or remixing sounds, these tools make the process faster and more creative. No need to be a music expert—just experiment and have fun!",
   },
 ]
 

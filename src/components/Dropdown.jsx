@@ -66,7 +66,7 @@ const Dropdown = ({ items, setSelectedPage }) => {
                     }}
                     transition={{ duration: 0.2, ease: "easeOut" }}
                   >
-                    <p className="pb-4 pl-4 px-2 text-text-content">
+                    <p className="pb-4 pl-4 px-2 text-gray-200">
                       {typeof item.answer === "function"
                         ? item.answer()
                         : item.answer}

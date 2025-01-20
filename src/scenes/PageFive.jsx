@@ -10,9 +10,9 @@ import pikaIcon from "../assets/pika-icon.svg"
 const dropdownItems = [
   {
     id: "video1",
-    question: "What is Video AI?",
+    question: "What can Video AI do?",
     answer:
-      "Video AI tools help create, edit, or enhance videos using artificial intelligence.",
+      "Video AI can help you create, edit, and enhance videos with little effort. It can generate clips from text, remove backgrounds, upscale video quality, and even automate editing. Whether you're making content for fun or for work, these tools make video creation faster and easier!",
   },
 ]
 
@@ -57,7 +57,7 @@ const PageFive = ({ setSelectedPage }) => {
           {/* BUTTONS */}
           <div className="w-5/6 lg:w-4/6 xl:w-3/6 flex flex-col sm:flex-row items-center justify-center font-quest text-base md:text-lg sm:pt-16 gap-6 lg:gap-8 se:gap-4">
             <PageTile
-              href="https://suno.ai"
+              href="https://openai.com/sora"
               imgSrc={chatGPTIcon} // Make sure this is the correct icon for Sora
               altText="Sora AI Icon"
               title="Sora"

@@ -11,7 +11,8 @@ const dropdownItems = [
   {
     id: "textSpeech1",
     question: "What is Text ↔ Speech AI? Is it really as simple as it sounds?",
-    answer: "Absolutely!",
+    answer:
+      "Absolutely! These AI tools turn text into realistic speech and can also convert spoken words back into text. Whether you need a natural-sounding voiceover or quick transcriptions, it’s as simple as typing or speaking. No complicated setup—just type, listen, or transcribe in seconds!",
   },
 ]
 

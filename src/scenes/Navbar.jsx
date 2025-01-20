@@ -24,6 +24,7 @@ import {
   HeartIcon,
   ExclamationTriangleIcon,
 } from "@heroicons/react/24/outline"
+import AnchorLink from "react-anchor-link-smooth-scroll"
 
 // ======================================================================================
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
@@ -67,25 +68,29 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
         {/* DESKTOP NAV ===================================================================*/}
         {isDesktop ? (
           window.location.pathname === "/" ? (
-            <div className="flex justify-between items-center  text-md font-quest bg-zinc-500 bg-opacity-15 backdrop-blur-xl rounded-md">
-              <LinkDesktop
-                displayText="Home"
-                page="Home"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />{" "}
+            <div className="flex justify-between items-center  text-md font-quest bg-zinc-500 bg-opacity-15 backdrop-blur-xl rounded-md ">
+              <div className="overflow-hidden rounded-l-md">
+                {" "}
+                <LinkDesktop
+                  displayText="Home"
+                  page="Home"
+                  selectedPage={selectedPage}
+                  setSelectedPage={setSelectedPage}
+                />{" "}
+              </div>
+
               <div
                 className="relative"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
               >
-                <button className="text-gray-100 text-lg h-full hover:text-sky-400 hover:bg-zinc-900 hover:bg-opacity-40 py-5 px-5 ">
+                <button className="text-gray-100 text-lg h-full hover:text-sky-400 hover:bg-zinc-900 hover:bg-opacity-60 py-5 px-5">
                   AI Categories ⏷
                 </button>
                 {isHovered && (
                   <div
                     onClick={() => setIsHovered(false)}
-                    className="absolute flex flex-col  -left-2 -mt-2 bg-zinc-700 rounded-md shadow-lg min-w-[250px] transition-opacity duration-200 opacity-100 w-auto"
+                    className="absolute flex flex-col overflow-hidden -left-2 -mt-2 bg-zinc-700 rounded-md shadow-lg min-w-[250px] transition-opacity duration-200 opacity-100 w-auto"
                   >
                     <LinkDesktop
                       displayText="Chat AI"
@@ -144,7 +149,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                   selectedPage === selectedPage
                     ? "text-gray-200"
                     : "text-gray-100"
-                } py-5 px-5 flex hover:text-sky-400 text-lg text-text-supporting z-40 hover:bg-zinc-900 hover:bg-opacity-40`} // Add flex and gap for icon alignment
+                } py-5 px-5 flex hover:text-sky-400 text-lg text-text-supporting z-40 hover:bg-zinc-900 hover:bg-opacity-60`} // Add flex and gap for icon alignment
               >
                 Inspiration
               </Link>
@@ -158,7 +163,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                   selectedPage === selectedPage
                     ? "text-gray-200"
                     : "text-gray-100"
-                } py-5 px-5 flex hover:text-gray-100 text-lg hover:bg-red-900 text-text-supporting z-40 rounded-sm hover:bg-opacity-60`} // Add flex and gap for icon alignment
+                } py-5 px-5 flex hover:text-gray-100 text-lg hover:bg-red-900 text-text-supporting z-40 rounded-r-md hover:bg-opacity-90`} // Add flex and gap for icon alignment
               >
                 Warning!
               </Link>

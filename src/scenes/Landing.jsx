@@ -4,8 +4,6 @@ import { motion } from "framer-motion"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import Greeting from "../components/Greeting"
 
-import coolEnglishHero from "../assets/Cool English_final version.webp"
-import heroImage from "../assets/heroImage.png"
 import JoinButton from "../buttons/JoinButton"
 import coolEnglishLogo from "../assets/cool english logo.png"
 import LandingTile from "../components/LandingTile"

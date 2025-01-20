@@ -16,9 +16,10 @@ import AnchorLink from "react-anchor-link-smooth-scroll"
 const dropdownItems = [
   {
     id: "chat1",
-    question: "I'm overwhelmed by the choices. Which chatbot should I use?",
+    question:
+      "Which one of these chatbots should I use? Are there other options out there?",
     answer:
-      "Each has its strengths: ChatGPT is great for general use and coding, Claude excels at analysis and long-form content, while Gemini is strong with current events and Google integration. Start with ChatGPT if you're new to AI chat - it's the most user-friendly and versatile.",
+      "You’re only a few clicks away from trying any of them, and honestly, they’re all great at what they do! Each chatbot has its own strengths, but the best way to find the right one is to just test them out. There are other options out there too, but these are the most popular and widely used. Whichever you pick, you'll be in good hands!",
   },
 ]
 

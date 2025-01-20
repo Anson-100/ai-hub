@@ -19,7 +19,7 @@ const LinkDesktop = ({
         selectedPage === lowerCasePage
           ? "text-sky-400 z-40"
           : "font-quest py-3 px-4 hover:text-sky-400 text-lg text-text-supporting z-40"
-      } text-lg py-5 px-5 flex items-center gap-4 hover:bg-zinc-900 hover:bg-opacity-40`}
+      } text-lg py-5 px-5 flex items-center gap-4 hover:bg-zinc-900 hover:bg-opacity-60`}
       href={`#${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}
     >

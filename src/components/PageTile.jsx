@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { ArrowUpRightIcon } from "@heroicons/react/24/outline"
+
 import LearnMore from "./LearnMore" // Importing the modal component
 
 const PageTile = ({ href, imgSrc, altText, title, contentKey }) => {
@@ -35,8 +35,9 @@ const PageTile = ({ href, imgSrc, altText, title, contentKey }) => {
           className="button-shadow rounded-br-md p-3 w-1/2"
         >
           <div className="flex justify-center gap-2 items-center text-center">
-            <p>Go to Site</p>
-            <ArrowUpRightIcon className="w-5" />
+            <p>
+              Go to Site <span className="ml-1 text-xl">↗</span>
+            </p>
           </div>
         </a>
       </div>

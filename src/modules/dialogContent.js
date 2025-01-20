@@ -139,4 +139,99 @@ export const dialogContent = {
       "Yes, Play.ht offers licensing for commercial projects, including podcasts, videos, audiobooks, and business applications.",
     link: "https://play.ht",
   },
+  // MUSIC AI====================================================================
+  suno: {
+    title: "What is Suno?",
+    intro:
+      "Suno is an AI tool that helps you create original songs with just a few clicks.",
+    question1Title: "How does Suno make music?",
+    question1Body:
+      "It uses AI to mix sounds and patterns, creating unique songs based on what you choose.",
+    question2Title: "Can I control how the music sounds?",
+    question2Body:
+      "Yes! You can pick the mood, style, and instruments to match your project.",
+    question3Title: "Who should use Suno?",
+    question3Body:
+      "It's great for musicians, video creators, and anyone who needs background music without making it from scratch.",
+    link: "https://suno.ai",
+  },
+
+  soundraw: {
+    title: "What is Soundraw?",
+    intro:
+      "Soundraw is an AI music generator that lets you make your own songs and change them however you want.",
+    question1Title: "How does Soundraw create songs?",
+    question1Body:
+      "It combines AI and user choices to make custom music tracks in seconds.",
+    question2Title: "Can I change the music it makes?",
+    question2Body:
+      "Yes! You can adjust things like speed, length, and intensity to fit your needs.",
+    question3Title: "Can I use Soundraw’s music for my projects?",
+    question3Body:
+      "Yes! The music is royalty-free, so you can use it in videos, podcasts, and other projects without worrying about copyright.",
+    link: "https://soundraw.io",
+  },
+
+  playht: {
+    title: "What is Play.ht?",
+    intro: "Play.ht is an AI voice tool that turns text into realistic speech.",
+    question1Title: "How is Play.ht different?",
+    question1Body:
+      "It makes AI voices sound more natural, with different tones and accents.",
+    question2Title: "Can I adjust the voice?",
+    question2Body:
+      "Yes! You can choose different voices, control speed, and add emphasis to certain words.",
+    question3Title: "Who should use Play.ht?",
+    question3Body:
+      "It's great for YouTubers, podcasters, businesses, or anyone who needs high-quality AI voiceovers.",
+    link: "https://play.ht",
+  },
+  // VIDEO AI==================================================================
+  sora: {
+    title: "What is Sora?",
+    intro:
+      "Sora is an AI tool from OpenAI that creates realistic videos from text descriptions.",
+    question1Title: "How does Sora generate videos?",
+    question1Body:
+      "You type a description of what you want, and Sora's AI creates a video that matches it.",
+    question2Title: "What kind of videos can it make?",
+    question2Body:
+      "Sora can generate short, realistic videos based on detailed prompts, making it great for creative projects.",
+    question3Title: "Who should use Sora?",
+    question3Body:
+      "It's perfect for content creators, filmmakers, and anyone who wants AI-generated video content.",
+    link: "https://openai.com/sora",
+  },
+
+  runway: {
+    title: "What is Runway?",
+    intro:
+      "Runway is an AI-powered video editing and generation tool designed for creative professionals.",
+    question1Title: "How does Runway help with video editing?",
+    question1Body:
+      "It uses AI to remove backgrounds, edit footage, and even generate video clips automatically.",
+    question2Title: "Can Runway create videos from text?",
+    question2Body:
+      "Yes! You can describe a scene, and Runway's AI will generate a matching video.",
+    question3Title: "Who should use Runway?",
+    question3Body:
+      "It's great for filmmakers, YouTubers, and anyone who wants fast, AI-powered video creation and editing.",
+    link: "https://runwayml.com",
+  },
+
+  pika: {
+    title: "What is Pika?",
+    intro:
+      "Pika is an AI tool that makes video editing and animation easier with smart automation.",
+    question1Title: "How does Pika work?",
+    question1Body:
+      "Pika helps with editing, special effects, and animation by using AI to automate complex tasks.",
+    question2Title: "Can it generate videos from scratch?",
+    question2Body:
+      "Yes! Pika can create short animated clips based on prompts, making it useful for quick content generation.",
+    question3Title: "Who is Pika for?",
+    question3Body:
+      "It's great for animators, video editors, and content creators who want to speed up their workflow with AI.",
+    link: "https://pika.art",
+  },
 }
