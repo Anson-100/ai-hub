@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ade56c56.css",
-    "main.js": "/static/js/main.414cc968.js",
+    "main.css": "/static/css/main.b11894b3.css",
+    "main.js": "/static/js/main.626b549c.js",
     "static/media/aiva-icon.png": "/static/media/aiva-icon.f224f2a33f2b9d32b5ea.png",
     "static/media/apple-podcast-icon.png": "/static/media/apple-podcast-icon.276062b2c7e9352b1e4e.png",
     "static/media/spotify-icon.png": "/static/media/spotify-icon.099d88a473c1ccabeed5.png",
@@ -23,11 +23,11 @@
     "static/media/suno-icon.svg": "/static/media/suno-icon.efd10933a74061429e5f940154648a51.svg",
     "static/media/gemini-icon.svg": "/static/media/gemini-icon.ec0fcb4abf6871b15c64d0c87086ec69.svg",
     "static/media/elevenlabs-icon.svg": "/static/media/elevenlabs-icon.632b28d385b691a1597b2dc016b9d161.svg",
-    "main.ade56c56.css.map": "/static/css/main.ade56c56.css.map",
-    "main.414cc968.js.map": "/static/js/main.414cc968.js.map"
+    "main.b11894b3.css.map": "/static/css/main.b11894b3.css.map",
+    "main.626b549c.js.map": "/static/js/main.626b549c.js.map"
   },
   "entrypoints": [
-    "static/css/main.ade56c56.css",
-    "static/js/main.414cc968.js"
+    "static/css/main.b11894b3.css",
+    "static/js/main.626b549c.js"
   ]
 }
